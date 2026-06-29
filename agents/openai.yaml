@@ -1,0 +1,8 @@
+interface:
+  display_name: "Visio Paper Figure"
+  short_description: "Drive local Visio on Windows for editable paper figures."
+  default_prompt: "Use $visio-local-paper-figure to create or revise an editable Visio paper figure on my local Windows machine."
+
+policy:
+  allow_implicit_invocation: true
+
