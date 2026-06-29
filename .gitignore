@@ -1,0 +1,31 @@
+# OS / editor
+Thumbs.db
+Desktop.ini
+.vscode/
+.idea/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# PowerShell / logs
+*.log
+*.tmp
+
+# Generated outputs
+output/
+outputs/
+tmp/
+tmp_exports/
+seed_export_test/
+final_visio_exports/
+
+# Generated Visio files during testing
+*_backup_*.vsdx
+visio_save_test*.vsdx
+template_based_test.vsdx
+final_visio_output.vsdx
+
+# Keep the curated seed asset, ignore other ad hoc Office outputs
+~$*.vsdx
+~$*.vsd
