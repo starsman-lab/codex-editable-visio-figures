@@ -1,0 +1,2 @@
+# This wrapper uses only the Python standard library.
+# A dedicated requirements file is included so Python users know no extra packages are needed.
