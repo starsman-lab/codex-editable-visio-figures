@@ -1,4 +1,4 @@
-# visio-local-paper-figure-skill
+# codex-editable-visio-figures
 
 A Codex skill for building editable paper figures with local Microsoft Visio on Windows.
 
