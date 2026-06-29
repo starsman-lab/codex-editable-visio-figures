@@ -39,7 +39,7 @@ That makes the automation much more stable for real use.
 ## Project structure
 
 ```text
-visio-local-paper-figure-skill/
+codex-editable-visio-figures/
 |- SKILL.md
 |- README.md
 |- .gitignore
