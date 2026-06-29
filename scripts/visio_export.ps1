@@ -52,17 +52,17 @@ try {
         switch ($normalized) {
             'png' {
                 $path = Join-Path $OutputDir ($baseName + '_' + $page.NameU + '.png')
-                $page.Export($path)
+                $null = $page.Export($path)
                 $generated.Add($path)
             }
             'svg' {
                 $path = Join-Path $OutputDir ($baseName + '_' + $page.NameU + '.svg')
-                $page.Export($path)
+                $null = $page.Export($path)
                 $generated.Add($path)
             }
             'pdf' {
                 $path = Join-Path $OutputDir ($baseName + '.pdf')
-                $doc.ExportAsFixedFormat($visFixedFormatPDF, $path, $visDocExIntentPrint, $visPrintAll)
+                $null = $doc.ExportAsFixedFormat($visFixedFormatPDF, $path, $visDocExIntentPrint, $visPrintAll)
                 $generated.Add($path)
             }
             default {
