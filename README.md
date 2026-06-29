@@ -51,6 +51,8 @@ visio-local-paper-figure-skill/
 |  |- preview.png
 |- examples/
 |  |- example-spec.json
+|- python/
+|  |- build_figure.py
 |- references/
 |  |- workflow.md
 |  |- spec-schema.md
@@ -59,6 +61,18 @@ visio-local-paper-figure-skill/
 |  |- launch_visio.ps1
 |  |- visio_apply_spec.ps1
 |  |- visio_export.ps1
+```
+
+## Python wrapper
+
+A lightweight Python entrypoint is included for users who prefer a Python-first CLI while keeping PowerShell as the stable Windows/Visio backend.
+
+```powershell
+python .\python\build_figure.py probe
+
+python .\python\build_figure.py export --vsdx .\assets\seed-paper-figure.vsdx --formats png pdf
+
+python .\python\build_figure.py build --spec .\examples\example-spec.json --output .\output\figure1.vsdx --formats png pdf --replace-page
 ```
 
 ## Scripts
@@ -113,6 +127,16 @@ A runnable example spec is included at:
 - This skill is built for **local Windows + Visio COM** rather than cloud rendering.
 - For very fine visual polish, a second-pass manual Visio edit may still be useful.
 
+## Requirements
+
+- Windows
+- Microsoft Visio desktop installed locally
+- PowerShell available
+- Python 3.9+ for the wrapper CLI
+
+The Python wrapper itself uses only the standard library; see [requirements.txt](requirements.txt).
+Visio COM automation also requires a usable interactive Windows desktop/logon session; headless or expired sessions may fail the probe even when Visio is installed.
+
 ## Validation status
 
 This project was validated on the local machine with a successful end-to-end flow that produced:
@@ -127,3 +151,4 @@ This project was validated on the local machine with a successful end-to-end flo
 - add image-to-spec assistance for paper figure reconstruction;
 - add a higher-level wrapper command for one-shot figure generation;
 - add optional live Visio UI refinement guidance after the scripted draft is created.
+
