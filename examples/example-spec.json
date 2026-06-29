@@ -1,0 +1,55 @@
+{
+  "page": {
+    "name": "PaperFigure",
+    "width": 8.0,
+    "height": 4.5
+  },
+  "shapes": [
+    {
+      "id": "panel-a",
+      "type": "rect",
+      "x": 0.5,
+      "y": 0.5,
+      "width": 2.4,
+      "height": 1.2,
+      "text": "Encoder",
+      "fill": "#E8F1FF",
+      "line": "#3B82F6",
+      "fontSize": 10,
+      "rounding": 0.08
+    },
+    {
+      "id": "panel-b",
+      "type": "rect",
+      "x": 4.0,
+      "y": 0.5,
+      "width": 2.4,
+      "height": 1.2,
+      "text": "Classifier",
+      "fill": "#EEFCEB",
+      "line": "#22C55E",
+      "fontSize": 10,
+      "rounding": 0.08
+    },
+    {
+      "id": "flow",
+      "type": "connector",
+      "from": [2.9, 1.1],
+      "to": [4.0, 1.1],
+      "line": "#334155",
+      "lineWeight": 0.02,
+      "endArrow": 13
+    },
+    {
+      "id": "caption",
+      "type": "text",
+      "x": 0.5,
+      "y": 2.4,
+      "width": 4.8,
+      "height": 0.5,
+      "text": "Seed-based local Visio pipeline",
+      "fontSize": 11,
+      "textColor": "#111827"
+    }
+  ]
+}
